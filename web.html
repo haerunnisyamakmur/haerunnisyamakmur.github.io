@@ -6,7 +6,31 @@
     <title>My#Website</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src="https://kit.fontawesome.com/9fac50fda5.js" crossorigin="anonymous"></script>
-    <script language="JavaScript" src="script.js"></script>
+    <script src="dist/sweetalert2.all.min.js"></script>
+    <script>
+        function kirimpesan(){
+            let Nama = document.getElementById('Nama').value;
+            let Email = document.getElementById('Email').value;
+            let Pesan = document.getElementById('pesan').value;
+
+            if (Nama=="" || Email=="" || Pesan==""){
+                new Swal({
+                    title: "Lengkapi kolom isian!",
+                    text:"",
+                    icon:'info'
+                })
+            } else{
+                new Swal({
+                    title: "Success",
+                    text:"Pesan berhasil dikirim",
+                    icon:'success'
+                })
+                document.getElementById("Nama").value = "";
+                document.getElementById("Email").value = "";
+                document.getElementById("pesan").value = "";
+            }
+        }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -68,11 +92,8 @@
         <div class="column2">
             <p>
                Hi, saya Haerunnisya Makmur dan biasa dipanggil Cica. Saya lahir di Parepare pada
-               tanggal 30 September 2003. Saya merupakan anak pertama dari pasangan bapak Makmur dan ibu 
-               Herni Jaini dengan dua bersaudara.<br>
-            </p>
-
-            <p>Ketika berumur 6 tahun, saya memulai pendidikan di Sekolah Dasar Negeri 22 Parepare.
+               tanggal 30 September 2003. Saya merupakan anak pertama dari dua bersaudara.
+               Ketika berumur 6 tahun, saya memulai pendidikan di Sekolah Dasar Negeri 22 Parepare.
                Kemudian, setelah lulus saya melanjutkan pendidikan di SMP Negeri 2 Parepare dan melanjutkan 
                pendidikan sekolah menengah atas di SMA Negeri 1 Parepare. Setelah 18 tahun menetap
                di kota kelahiran, saya akhirnya merantau ke Makassar untuk menempuh pendidikan S1 
@@ -123,7 +144,7 @@
                     <div class="inputBox">
                         <textarea placeholder="message" id="pesan"></textarea>
                     </div>
-                    <button type="submit" onclick="kirimpesan()" class="btn">Send</button>
+                    <button type="submit" onClick="kirimpesan()" class="btn">Send</button>
                 </form>
             </div>
         </div>

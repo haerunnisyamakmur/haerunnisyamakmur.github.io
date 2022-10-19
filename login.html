@@ -3,6 +3,7 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="login.css" type="text/css">
+    <script src="dist/sweetalert2.all.min.js"></script>
     <script>
         var username;
         var pass;
@@ -11,12 +12,20 @@
             pass = document.getElementById("password").value;
 
             if (username=="" && pass==""){
-                window.alert("Masukkan username dan password!");
+                new Swal({
+                    title: "Something went wrong!",
+                    text:"Masukkan username dan password!",
+                    icon:'error'
+                })
                 document.getElementById("nama").value = "";
                 document.getElementById("password").value = "";
-            } else if (username!="haerunnisya"||pass!="123"){
-                window.alert("Perhatikan username dan password!");
-            } else if (username=="haerunnisya" && pass=="123"){
+            } else if (username!="123"||pass!="123"){
+                new Swal({
+                    title: "Something went wrong!",
+                    text:"Perhatikan username dan password!",
+                    icon:'error'
+                })
+            } else if (username=="123" && pass=="123"){
                 window.location.href="web.html";
             } else {
 
