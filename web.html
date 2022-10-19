@@ -16,7 +16,7 @@
             if (Nama=="" || Email=="" || Pesan==""){
                 new Swal({
                     title: "Lengkapi kolom isian!",
-                    text:"",
+                    text:"Mohon lengkapi kolom isian",
                     icon:'error'
                 })
             } else{
@@ -144,7 +144,7 @@
                     <div class="inputBox">
                         <textarea placeholder="message" id="pesan"></textarea>
                     </div>
-                    <button type="submit" onClick="kirimpesan()" class="btn">Send</button>
+                    <input type="button" onClick="kirimpesan()" class="btn" value="send">
                 </form>
             </div>
         </div>
