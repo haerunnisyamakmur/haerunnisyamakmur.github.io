@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My#Website</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/9fac50fda5.js" crossorigin="anonymous"></script>
+    <script language="JavaScript" src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="wrapper">
+                <div class="logo"><a href=''>My#Website</a></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#dashboard">Dashboard</a></li>
+                        <li><a href="#about">Biografi</a></li>
+                        <li><a href="#quotes">Quotes</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="dashboard" id="dashboard">
+        <div class="column1">
+            <img src="img/foto.png" alt="">
+        </div>
+        <div class="column2">
+            <h2>HAERUNNISYA MAKMUR -</p><h2>
+            <span>University Student</span> <br><br>
+            <table>
+                <tr>
+                    <td>Prodi</td><td>&nbsp;</td><td>:</td><td>&nbsp;</td>
+                    <td>Teknik Komputer</td>
+                </tr>
+                <tr></tr><tr></tr>
+                <tr>
+                    <td>Instansi</td><td></td><td>:</td><td></td>
+                    <td>Universitas Negeri Makassar</td>
+                </tr><tr></tr><tr></tr>
+                <tr>
+                    <td>Kelas</td><td></td><td>:</td><td></td>
+                    <td> TEKOM A</td>
+                </tr><tr></tr><tr></tr>
+                <tr>
+                    <td>NIM</td><td></td><td>:</td><td></td>
+                    <td>210210501031</td>
+                </tr><tr></tr><tr></tr>
+                <tr>
+                    <td>Hobi</td><td></td><td>:</td><td></td>
+                    <td>Membaca Novel</td>
+                </tr><tr></tr><tr></tr>
+                <tr>
+                    <td>Cita-Cita</td><td></td><td>:</td><td></td>
+                    <td>PNS / Pegawai Swasta</td>
+                </tr><tr></tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="profile" id="about">
+        <h1 class="heading">BIOGRAFI</h1>
+        <div class="column2">
+            <p>
+               Hi, saya Haerunnisya Makmur dan biasa dipanggil Cica. Saya lahir di Parepare pada
+               tanggal 30 September 2003. Saya merupakan anak pertama dari pasangan bapak Makmur dan ibu 
+               Herni Jaini dengan dua bersaudara.<br>
+            </p>
+
+            <p>Ketika berumur 6 tahun, saya memulai pendidikan di Sekolah Dasar Negeri 22 Parepare.
+               Kemudian, setelah lulus saya melanjutkan pendidikan di SMP Negeri 2 Parepare dan melanjutkan 
+               pendidikan sekolah menengah atas di SMA Negeri 1 Parepare. Setelah 18 tahun menetap
+               di kota kelahiran, saya akhirnya merantau ke Makassar untuk menempuh pendidikan S1 
+               di Universitas Negeri Makassar pada program studi Teknik Komputer. 
+            </p>
+        </div>
+    </section>
+
+    <section class="quotes" id="quotes">
+        <div class="box">
+            <p>" Everybody wants happiness. <br>
+                Nobody wants pain.<br>
+                But you can't have a rainbow <br>
+                without a little rain "
+            </p>
+            <br><br><h3>- ANONYMOUS -</h3> <br>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>contact</span> me </h1>
+        <div class="row">
+            <div class="kolom1">
+                <h3>get in touch</h3> <br>
+                <div class="sosmed">
+                    <ul>
+                        <li><a href="https://api.whatsapp.com/send?phone=6285256502760" target="_blank">
+                            <i class="fa-brands fa-whatsapp fa-xl"></i>  +6285256502760</a></li>
+                        <li><a href="https://www.instagram.com/haerunnisyamakmur/" target="_blank">
+                            <i class="fa-brands fa-instagram fa-xl"></i>  @haerunnisyamakmur</a></li> 
+                        <li><a href="https://www.facebook.com/haerunnisya.makmur.5" target="_blank">
+                            <i class="fa-brands fa-facebook fa-xl"></i>  Haerunnisya Makmur</a></li> 
+                        <li><a href="" target="_blank"><i class="fa-regular fa-envelope fa-xl"></i>  
+                            haerunnisyamakmur44@gmail.com</a></li> 
+                    </ul>
+                </div>
+            </div>
+
+            <div class="kolom2">
+                <h3 align="center">send me message</h3>
+                <form action="">
+                    <div class="inputBox">
+                        <input type="text" placeholder="name" id="Nama">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" placeholder="email" id="Email">
+                    </div>
+                    <div class="inputBox">
+                        <textarea placeholder="message" id="pesan"></textarea>
+                    </div>
+                    <button type="submit" onclick="kirimpesan()" class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p class="credit">created by <span>Haerunnisya</span> | all rights reserved</p>
+    </section>
+</body>
+</html>

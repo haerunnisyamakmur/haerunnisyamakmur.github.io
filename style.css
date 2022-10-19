@@ -1,0 +1,335 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    transition: .1s linear;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.heading{
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    color:#364f6b;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 30px;
+    padding-top: 5px;
+}
+.header{
+    width: 100%;
+    background:#364f6b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+    padding-left: 130px;
+    position: fixed;
+    line-height: 30px;
+    box-shadow: 0 7px 15px 0 #506e9680;
+}
+.header nav .wrapper {
+    width: 1000px;
+    size: 1000px;
+    margin: auto;
+    position: relative;
+}
+.header nav .wrapper .logo a {
+    font-size: 30px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color:#F4C7AB;
+}
+.header nav .wrapper .menu {
+    float: right;
+}
+.header nav .wrapper .menu ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.header nav .wrapper .menu ul li {
+    float: left;   
+}
+.header nav .wrapper .menu ul li a {
+    color:#DEEDF0;
+    font-family: Gill Sans MT;
+    text-align: center;
+    font-size: 14pt;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+.header nav .wrapper .menu ul li a:hover {
+    color:#F4C7AB;
+    transition: all .3s ease-in-out;
+}
+section{
+    padding:25px;
+}
+.home{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-image: url(img/bg10.jpg);  */
+    background-color: #F4C7AB;
+    background-size: 100%;
+    background-position: center;
+}
+.home .content span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    color:#364f6b;
+    margin-top: 65vh;
+    margin-left: 120px;
+}
+.home .content p{
+    font-size: 20px;
+    color:#364f6b;
+    margin-left: 100px;
+    padding: 10px 0px 20px 20px;
+    line-height: 27px;
+}
+.home .content p .tbl-biru {
+    background: #3f72af;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 10px 25px 10px 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+.home .content p .tbl-biru:hover {
+    background: #de6868;
+    text-decoration: none;
+}
+.picture{
+    width: 65%;
+    margin-left: 12vh;
+    margin-top:2vh;
+}
+
+.dashboard{
+    height: 100vh;
+    width: 100%;
+    padding-top: 160px;
+    align-items: center;
+    /* background-color: #F4C7AB; */
+    background-image: url(img/230.png);
+    background-size: 100%;
+    background-position: center;
+}
+.dashboard .column1{
+    float:left;
+    /* background-color: #d28e63; */
+    background-color: #bf947a;
+    width:400px;
+    margin-left: 200px;
+    padding:30px 45px 60px 40px;
+    text-align: center;
+    height: 55vh;
+    border-radius: 15px;
+}
+.dashboard .column1 img{
+    width:120%;
+}
+.dashboard .column2{
+    float:right;
+    width:450px;
+    margin-right: 140px;
+    padding: 25px 20px 20px 20px;
+    height: 60vh;
+    margin-top: 20px;
+}
+.dashboard .column2 h2{
+    font-family: Yu Gothic UI Semibold;
+    font-size: 15pt;
+    color:#183448;
+}
+.dashboard .column2 span{
+    font-family: Yu Gothic UI Semibold;
+    font-size: 15pt;
+    color:#7f5942;
+}
+table{
+    line-height: 20px;
+    font-family:Franklin Gothic Book;
+    font-size: 14pt;
+    color:#183448;
+    font-weight: lighter;
+    padding-top: 15px;
+}
+
+
+
+.profile{
+    height: 100vh;
+    width: 100%;
+    padding-top: 120px;
+    align-items: center;
+    /* background-color: #F5EDDC; */
+    background-image: url(img/html.png);
+    background-size: cover;
+    background-position: center;
+}
+.profile .column2{
+    width:750px;
+    margin-left: 245px;
+    padding: 20px 20px 20px 20px;
+    height: 60vh;
+    /* background-color: #cfcfce; */
+    background: transparent;
+}
+.profile .column2 h2{
+    font-family: Yu Gothic UI Semibold;
+    font-size: 15pt;
+    color:#183448;
+}
+.profile .column2 span{
+    font-family: Yu Gothic UI Semibold;
+    font-size: 15pt;
+    color:#be8f72;
+}
+.profile .column2 p{
+    line-height: 30px;
+    font-family:Franklin Gothic Book;
+    font-size: 13pt;
+    color:#183448;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+
+
+.quotes{
+    height: 100vh;
+    width: 100%;
+    padding-top: 110px;
+    background-image: url(img/bg5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.quotes .box{
+    width:100%;
+    height:55vh;
+    padding: 20px 20px 20px 35px;
+    text-align: center;
+    margin-top: 40px;
+}
+.quotes .box p{
+    font-size: 40pt;
+    font-family: Monotype Corsiva;
+    color:#4b2f1d;
+}
+.quotes .box h3{
+    font-family:Verdana;
+    color:indianred
+}
+.contact{
+    height: 100vh;
+    width: 100%;
+    padding-top: 110px;
+    background-color: #F5EDDC;
+    background-size: cover;
+    background-position: center;
+}
+.contact .row{
+    margin: 15px 100px 15px 100px;
+}
+.contact h3{
+    text-transform: uppercase;
+    font-size: 25px;
+    color:#364f6b;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+}
+.contact .kolom1{
+    float:left;
+    width:50%;
+    background-color: #aba7a1;
+    height: 55vh;
+    padding:23px 25px 25px 25px;
+    font-size: 20px;
+    text-align: center;
+}
+.contact .sosmed ul {
+    list-style-type: none;
+}
+.contact .sosmed ul li {
+    line-height: 50px;
+}
+.contact .sosmed ul li a {
+    font-family: Gill Sans MT;
+    text-align: center;
+    font-size: 14pt;
+    padding: 15px 15px 15px 15px;
+    text-decoration: none;
+    color:white;
+}
+.contact .sosmed ul li a:hover{
+    color:black;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.contact .kolom2{
+    width:50%;
+    float:right;
+    height: 55vh;
+    background-color:#D1CEC9;
+    padding:20px 20px 10px 20px;
+}
+.contact .row form{
+    text-align: center;
+}
+.contact .row form .inputBox{
+    align-items: center;
+    background:white;
+    margin-top: 15px;
+    margin-bottom:10px;
+}
+.contact .row form input{
+    width: 100%;
+    padding:10px;
+    font-size: 15px;
+    color:#364f6b;
+}
+.contact .row form textarea{
+    width: 100%;
+    padding:10px;
+    font-size: 15px;
+    color:#364f6b;
+    font-family: Arial;
+    resize: none;
+    height: 90px;
+}
+.btn{
+    margin-top: 10px;
+    padding:10px 30px 10px 30px;
+    font-size: 15px;
+    color:#fff;
+    background:#364f6b;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: #de6868;
+}
+.footer{
+    background:#305274;
+    text-align: center;
+    box-shadow: 15px 7px 15px 8px #506e9680;
+}
+.footer .credit{
+    font-size: 15px;
+    color:#c6d1de;
+    font-weight: lighter;
+    text-align: center;
+}
+.footer .credit span{
+    color:#e9ecf0;
+}
+

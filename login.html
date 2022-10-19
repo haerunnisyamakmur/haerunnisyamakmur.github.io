@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" type="text/css">
+    <script>
+        var username;
+        var pass;
+        function konfirmasi(){
+            username = document.getElementById("nama").value;
+            pass = document.getElementById("password").value;
+
+            if (username=="" && pass==""){
+                window.alert("Masukkan username dan password!");
+                document.getElementById("nama").value = "";
+                document.getElementById("password").value = "";
+            } else if (username!="haerunnisya"||pass!="123"){
+                window.alert("Perhatikan username dan password!");
+            } else if (username=="haerunnisya" && pass=="123"){
+                window.location.href="web.html";
+            } else {
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="kolom">
+        <h3 align="center">WELCOME</h3>
+        <p>login to your account</p>
+        <form>
+            <div class="inputBox">
+                <input type="text" placeholder="username" id="nama">
+            </div>
+            <div class="inputBox">
+                <input type="password" placeholder="password" id="password">
+            </div>
+            <input type="button" onClick="konfirmasi()" class="btn" value="Login">
+            <input type="reset" class="btn" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
